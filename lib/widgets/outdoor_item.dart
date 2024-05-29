@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 
 class OutdoorItem extends StatelessWidget {
   const OutdoorItem({
+    required this.title,
     super.key,
   });
+  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +20,7 @@ class OutdoorItem extends StatelessWidget {
         borderRadius: BorderRadius.circular(12),
       ),
       child: Text(
-        "Outdoor",
+        title,
         style: Theme.of(context)
             .textTheme
             .labelMedium!
