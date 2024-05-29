@@ -14,7 +14,7 @@ class CollapsedAppBar extends StatelessWidget {
         horizontal: 10,
       ),
       decoration: const BoxDecoration(
-        color: Colors.red,
+        color: Color.fromARGB(255, 195, 36, 34),
       ),
       child: Row(
         // mainAxisSize: MainAxisSize.max,
@@ -54,8 +54,14 @@ class CollapsedAppBar extends StatelessWidget {
           GestureDetector(
             onTap: () {
               showModalBottomSheet(
+                // showDragHandle: true,
+                backgroundColor: Colors.white,
                 context: context,
                 builder: ((context) => BottomSheet(
+                    showDragHandle: true,
+                    dragHandleColor: const Color.fromARGB(255, 73, 73, 73),
+                    dragHandleSize: const Size(150, 4),
+                    backgroundColor: Colors.white,
                     onClosing: () {},
                     builder: (context) => const Column(
                           mainAxisSize: MainAxisSize.min,
@@ -79,7 +85,7 @@ class CollapsedAppBar extends StatelessWidget {
             child: Container(
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(20),
-                color: const Color.fromARGB(255, 211, 49, 38),
+                color: const Color.fromARGB(255, 170, 36, 34),
               ),
               padding: const EdgeInsets.all(4),
               child: const Icon(

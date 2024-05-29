@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:schaffensoftwares/widgets/costum_search_deligate.dart';
 
 import 'widgets/collapsed_appbar.dart';
 import 'widgets/expandable_text.dart';
@@ -7,7 +6,6 @@ import 'widgets/expanded_appbar.dart';
 import 'widgets/outdoor_item.dart';
 import 'widgets/image_item.dart';
 import 'widgets/mute_notification.dart';
-import 'widgets/profile_item.dart';
 import 'widgets/search_member_widget.dart';
 import 'widgets/settings_item.dart';
 
@@ -73,7 +71,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   shape: BoxShape.circle,
                   color: _isAppBarExpanded
                       ? Colors.black
-                      : const Color.fromARGB(255, 211, 49, 38),
+                      : const Color.fromARGB(255, 170, 36, 34),
                 ),
                 child: const Icon(
                   Icons.arrow_back,

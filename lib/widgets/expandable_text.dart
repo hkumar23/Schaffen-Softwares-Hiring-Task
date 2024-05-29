@@ -38,10 +38,9 @@ class _ExpandableTextState extends State<ExpandableText> {
             },
             child: Text(
               _isExpanded ? "Read less" : "Read more",
-              style: Theme.of(context)
-                  .textTheme
-                  .bodyLarge!
-                  .copyWith(color: Colors.red),
+              style: Theme.of(context).textTheme.bodyLarge!.copyWith(
+                    color: const Color.fromARGB(255, 239, 69, 111),
+                  ),
             ),
           ),
         ],

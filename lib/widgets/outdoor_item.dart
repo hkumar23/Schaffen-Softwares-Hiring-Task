@@ -16,7 +16,10 @@ class OutdoorItem extends StatelessWidget {
         vertical: 2,
       ),
       decoration: BoxDecoration(
-        border: Border.all(color: Colors.red, width: 1),
+        border: Border.all(
+          color: const Color.fromARGB(255, 239, 69, 111),
+          width: 1,
+        ),
         borderRadius: BorderRadius.circular(12),
       ),
       child: Text(
@@ -24,7 +27,7 @@ class OutdoorItem extends StatelessWidget {
         style: Theme.of(context)
             .textTheme
             .labelMedium!
-            .copyWith(color: Colors.red),
+            .copyWith(color: const Color.fromARGB(255, 239, 69, 111)),
       ),
     );
   }

@@ -12,7 +12,7 @@ class ExpandedAppBar extends StatelessWidget {
       width: MediaQuery.of(context).size.width,
       padding: const EdgeInsets.symmetric(horizontal: 14),
       decoration: const BoxDecoration(
-        color: Colors.red,
+        color: Color.fromARGB(255, 195, 36, 34),
       ),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
